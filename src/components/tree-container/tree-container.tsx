@@ -1,13 +1,13 @@
 import {component$, useSignal, useVisibleTask$} from "@builder.io/qwik";
-import styles from "./graph-container.module.css";
-import {createGraph} from "~/components/graph-container/graph-generator";
-import { type tSymbol } from "~/components/graph-container/types";
+import styles from "./tree-container.module.css";
+import {createGraph} from "~/components/tree-container/tree-generator";
+import { type tSymbol } from "~/components/tree-container/types";
 
 type GraphContainerProps = {
     symbols: tSymbol[];
 }
 
-export const GraphContainer = component$(({ symbols }: GraphContainerProps) => {
+export const TreeContainer = component$(({ symbols }: GraphContainerProps) => {
     const containerRef = useSignal<HTMLDivElement>();
 
     useVisibleTask$(({ cleanup }) => {

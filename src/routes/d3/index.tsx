@@ -3,8 +3,8 @@ import {
   type DocumentHead,
   routeLoader$,
 } from "@builder.io/qwik-city";
-import { GraphContainer } from "~/components/graph-container/graph-container";
-import { type tSymbol } from "~/components/graph-container/types";
+import { TreeContainer } from "~/components/tree-container/tree-container";
+import { type tSymbol } from "~/components/tree-container/types";
 
 export const list: tSymbol[] = [
     {
@@ -117,7 +117,7 @@ export default component$(() => {
       <div role="presentation" class="ellipsis"></div>
 
       <div class="container container-center">
-          <GraphContainer symbols={list.value} />
+          <TreeContainer symbols={list.value} />
       </div>
     </>
   );

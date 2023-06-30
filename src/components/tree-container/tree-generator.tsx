@@ -1,5 +1,5 @@
 import * as d3 from "d3";
-import { type tSymbol, type Node } from "~/components/graph-container/types";
+import { type tSymbol, type Node } from "~/components/tree-container/types";
 
 function processSymbols(symbols: tSymbol[]) {
     const map = new Map<string, Node>();
