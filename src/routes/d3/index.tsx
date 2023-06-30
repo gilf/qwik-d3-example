@@ -5,6 +5,7 @@ import {
 } from "@builder.io/qwik-city";
 import { TreeContainer } from "~/components/tree-container/tree-container";
 import { type tSymbol } from "~/components/tree-container/types";
+import {ChordContainer} from "~/components/chord-conatainer/chord-container";
 
 export const list: tSymbol[] = [
     {
@@ -117,7 +118,8 @@ export default component$(() => {
       <div role="presentation" class="ellipsis"></div>
 
       <div class="container container-center">
-          <TreeContainer symbols={list.value} />
+          {/*<TreeContainer symbols={list.value} />*/}
+          <ChordContainer symbols={list.value} />
       </div>
     </>
   );
